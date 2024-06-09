@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Annotator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Annotator</h1>
+        <textarea id="note" placeholder="Enter your annotation name here..."></textarea>
+        <div id="color-options">
+            <button id="fill" data-color="yellow" style="background-color: #FFFF00;"></button>
+            <button id="fill" data-color="red" style="background-color: #FF0000; color: white;"></button>
+            <button id="fill" data-color="green" style="background-color: #00FF00;"></button>
+            <button id="fill" data-color="blue" style="background-color: #0000FF; color: white;"></button>
+            <button id="fill" data-color="orange" style="background-color: #FFA500; color: white;"></button>
+        </div>
+        <button id="highlight-text">Highlight Text</button>
+        <button id="save-annotations">Save Annotations</button>
+        <input type="text" id="search-query" placeholder="Search annotations...">
+        <button id="search-annotations">Search</button>
+        <div id="annotation-list"></div>
+        <button id="export-pdf">Export to PDF</button>
+    </div>
+    <script src="libs/jspdf.umd.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
